@@ -36,18 +36,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
         iframe {
-            width: 90%;
+            width: 70%;
             height: 80vh;
             border: none;
+            transform: scale(0.8); /* Riduce le dimensioni dell'iframe */
+            transform-origin: top left;
         }
 
         /* Responsive per smartphone */
         @media screen and (max-width: 768px) {
             iframe {
                 width: 100%;
-                height: 90vh; /* Maggiore altezza per evitare scrolling eccessivo */
+                height: 120vh; /* Altezza ridotta per evitare scrolling eccessivo */
+                transform: scale(0.6); /* Riduce ulteriormente per mobile */
             }
             .info-box {
                 width: 90%;
